@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+    />
+    <!-- 테마 -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"
+    />
+    <!-- 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <title>디바이스마다 달라지는 레이아웃</title>
+    <style>
+      div {
+        border: 1px solid gray;
+        height: 100px;
+        /* box sizing은 여백과 마진의 크기까지 합쳐서 구해줌 */
+        box-sizing: border-box;
+      }
+      /* row의 첫번째에 적용하라 */
+      .row:nth-of-type(1) {
+        background-color: rgb(120, 244, 236);
+      }
+      .row:nth-of-type(2) {
+        background-color: rgb(21, 205, 208);
+      }
+      .row:nth-of-type(3) {
+        background-color: rgb(158, 233, 237);
+      }
+      .row:nth-of-type(4) {
+        background-color: rgb(153, 207, 239);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>디바이스마다 달라지는 레이아웃</h1>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 text-center"><h1>lorem1</h1></div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-xs-12 text-center"><h1>lorem2</h1></div>
+        <div class="col-md-4 col-xs-12 text-center"><h1>lorem3</h1></div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-xs-12 text-center"><h1>lorem4</h1></div>
+        <div class="col-md-4 col-xs-12 text-center"><h1>lorem5</h1></div>
+        <div class="col-md-4 col-xs-12 text-center"><h1>lorem6</h1></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 text-center"><h1>lorem7</h1></div>
+      </div>
+    </div>
+  </body>
+</html>
